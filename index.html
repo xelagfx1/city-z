@@ -10,8 +10,8 @@
   <body>
 
   <div class="medium-12 columns">
-      <ul class="tabs vertical" data-tab>
-        <li class="tab-title active"><a href="#panel11">Users</a></li>
+      <ul class="tabs vertical" style="margin-top: 15px;" data-tab>
+        <li class="tab-title active" style="border: 1px solid black;"><a href="#panel11">Users</a></li>
         <li class="tab-title"><a href="#panel21">Roles</a></li>
         <li class="tab-title"><a href="#panel31">Permission Matrix</a></li>
       </ul>
@@ -85,10 +85,26 @@
 </div>
       </div>
       <div class="content" id="panel21">
-        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        <div class="wrapper medium-9 medium-offset-3" style="border: 1px solid black;">
+
+          <div class="medium-2 columns">
+            <input type="text" placeholder="Find Stuff">
+          </div>
+          <div class="medium-2 columns">
+            <i class="fi-magnifying-glass"></i>
+          </div>
+
+          <div class="medium-3 medium-offset-10 columns">
+              <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Admin</button>
+              <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                <li><a href="#">This is a link</a></li>
+                <li><a href="#">This is another</a></li>
+                <li><a href="#">Yet another</a></li>
+              </ul>
+          </div>
+        </div>
       </div>
       <div class="content" id="panel31">
-        <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
       </div>
     </div>
     </div>
