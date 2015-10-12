@@ -1,0 +1,44 @@
+.ul-wrapper {
+	margin-right: -25%;
+}
+
+ul .active {
+	border: 3px solid black;
+	border-right: none;
+	z-index: 0;
+	position: relative;
+	margin-right: -3px;
+}
+
+ul li {
+	border: 3px solid black;
+	margin: 3px 0 ;
+	border-right: none;
+}
+
+@media only screen and (max-width: 40em) {
+	ul li {
+		border: 3px solid black;
+		border-right:  3px solid black;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	ul .active {
+		border: 3px solid black;
+		border-right:  3px solid black;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.ul-wrapper {
+		margin-right: 0;
+	}
+}
+
+.row-height {
+	height: 150px;
+}
+
