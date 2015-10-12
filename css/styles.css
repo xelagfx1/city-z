@@ -1,0 +1,27 @@
+.wrapper {
+    border: 1px solid black;
+}
+
+.search-box {
+    padding: 5px;
+}
+
+.search-form {
+    padding-top: 15px;
+}
+
+.search-text p{
+    padding: 5px;
+}
+
+.clear-search-btn {
+
+}
+
+.search-row {
+    height: 70px;
+}
+
+.user-form i {
+    padding-right: 4px;
+}
