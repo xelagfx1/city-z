@@ -1,0 +1,13 @@
+ul .active {
+	border: 3px solid black;
+	border-right: none;
+	z-index: 0;
+	position: relative;
+	margin-right: -3px;
+}
+
+ul li {
+	border: 3px solid black;
+	margin: 3px 0 ;
+	border-right: none;
+}	

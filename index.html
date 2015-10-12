@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City Zenith</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
 
   <div class="medium-11 columns">
-      <ul class="tabs vertical" style="margin-top: 15px;" data-tab>
-        <li class="tab-title active" style="border: 1px solid black;"><a href="#panel11">Users</a></li>
+    <div style="margin-right: -25%;">
+      <ul class="tabs vertical" style="margin-top: 5%;" data-tab>
+        <li class="tab-title active"><a href="#panel11">Users</a></li>
         <li class="tab-title"><a href="#panel21">Roles</a></li>
         <li class="tab-title"><a href="#panel31">Permission Matrix</a></li>
       </ul>
+    </div>
 
     <div class="tabs-content">
       <div class="content active" id="panel11">
 
-        <div class="wrapper medium-9 medium-offset-3" style="border: 1px solid black;">
-            <div class="medium-3 medium-offset-10 columns">
+        <div class="wrapper medium-9 medium-offset-3" style="border: 3px solid black; z-index: 0;">
+            <div class="medium-3 medium-offset-9 columns">
               <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Admin</button>
               <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
                 <li><a href="#">This is a link</a></li>
@@ -30,7 +33,7 @@
           </div>
 
         <div class="row">
-          <div class="medium-4 medium-offset-0 columns"><a>Users</a> > Creating New User</div><br><br>
+          <div class="medium-6 medium-offset-0 columns"><a>Users</a> > Creating New User</div><br><br>
         </div>
       
         <form>
@@ -55,20 +58,20 @@
             </div>
             <div>  
               <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">Roles</div>
-                <input class="large-1 large-offset-1"id="admin-checkbox" type="checkbox"><label for="checkbox1">Admin</label><br>
-                <input class="large-1 large-offset-4"class="large-3 large-offset-3"class="large-3 large-offset-3"id="tenacy-admin-checkbox" type="checkbox"><label for="checkbox2">Tenacy Admin</label><br>
-                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="it-checkbox" type="checkbox"><label for="checkbox3">IT</label><br>
-                <input class="large-1 large-offset-4"id="normal-user-checkbox" type="checkbox"><label for="checkbox4">Normal User</label><br>
+                <input class="medium-1 medium-offset-1"id="admin-checkbox" type="checkbox"><label for="checkbox1">Admin</label><br>
+                <input class="medium-1 medium-offset-4"class="medium-3 medium-offset-3"class="medium-3 medium-offset-3"id="tenacy-admin-checkbox" type="checkbox"><label for="checkbox2">Tenacy Admin</label><br>
+                <input class="medium-1 medium-offset-4"class="medium-3 medium-offset-3"id="it-checkbox" type="checkbox"><label for="checkbox3">IT</label><br>
+                <input class="medium-1 medium-offset-4"id="normal-user-checkbox" type="checkbox"><label for="checkbox4">Normal User</label><br>
             </div><br>
 
             <div>
               <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">Status</div>
-                <input class="large-1 large-offset-1"id="verified-checkbox" type="checkbox"><label for="checkbox1">Verified</label><br>
-                <input class="large-1 large-offset-4"class="large-3 large-offset-3"class="large-3 large-offset-3"id="blocked-checkbox" type="checkbox"><label for="checkbox2">Blocked</label><br>
-                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="password-expired-checkbox" type="checkbox"><label for="checkbox3">Password-expired-grace</label><br>
-                <input class="large-1 large-offset-4"id="active-checkbox" type="checkbox"><label for="checkbox4">Active</label><br>
-                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="inactive-checkbox" type="checkbox"><label for="checkbox5">Inactive</label><br>
-                <input class="large-1 large-offset-4"id="terminated-checkbox" type="checkbox"><label for="checkbox6">Terminated</label><br>
+                <input class="medium-1 medium-offset-1"id="verified-checkbox" type="checkbox"><label for="checkbox1">Verified</label><br>
+                <input class="medium-1 medium-offset-4"class="medium-3 medium-offset-3"class="medium-3 medium-offset-3"id="blocked-checkbox" type="checkbox"><label for="checkbox2">Blocked</label><br>
+                <input class="medium-1 medium-offset-4"class="medium-3 medium-offset-3"id="password-expired-checkbox" type="checkbox"><label for="checkbox3">Password-expired-grace</label><br>
+                <input class="medium-1 medium-offset-4"id="active-checkbox" type="checkbox"><label for="checkbox4">Active</label><br>
+                <input class="medium-1 medium-offset-4"class="medium-3 medium-offset-3"id="inactive-checkbox" type="checkbox"><label for="checkbox5">Inactive</label><br>
+                <input class="medium-1 medium-offset-4"id="terminated-checkbox" type="checkbox"><label for="checkbox6">Terminated</label><br>
               </div>
             </div>
         </form>
@@ -76,7 +79,7 @@
     
       
       <div class="row">
-        <div class="medium-3 medium-offset-9">
+        <div class="medium-4 medium-offset-8  ">
           <a href="#" class="button tiny">Save</a>
           <a href="#" class="button tiny">Cancel</a>
         </div>
