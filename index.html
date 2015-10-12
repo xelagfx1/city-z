@@ -9,79 +9,80 @@
   </head>
   <body>
 
-    <ul class="tabs vertical" data-tab>
-      <li class="tab-title active"><a href="#panel11">Tab 1</a></li>
-      <li class="tab-title"><a href="#panel21">Tab 2</a></li>
-      <li class="tab-title"><a href="#panel31">Tab 3</a></li>
-      <li class="tab-title"><a href="#panel41">Tab 4</a></li>
-    </ul>
+  <div class="medium-12 columns">
+      <ul class="tabs vertical" data-tab>
+        <li class="tab-title active"><a href="#panel11">Users</a></li>
+        <li class="tab-title"><a href="#panel21">Roles</a></li>
+        <li class="tab-title"><a href="#panel31">Permission Matrix</a></li>
+      </ul>
+
     <div class="tabs-content">
       <div class="content active" id="panel11">
-        <p><div class="row">
-      <div class="medium-3 medium-offset-11">
-        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Admin</button><br>
-        <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-          <li><a href="#">This is a link</a></li>
-          <li><a href="#">This is another</a></li>
-          <li><a href="#">Yet another</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="medium-4"><a>Users</a> > Creating New User</div><br><br>
-    </div>
+        <div class="wrapper medium-9 medium-offset-3" style="border: 1px solid black;">
+            <div class="medium-3 medium-offset-10 columns">
+              <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny">Admin</button>
+              <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                <li><a href="#">This is a link</a></li>
+                <li><a href="#">This is another</a></li>
+                <li><a href="#">Yet another</a></li>
+              </ul>
+          </div>
+
+        <div class="row">
+          <div class="medium-4 medium-offset-0 columns"><a>Users</a> > Creating New User</div><br><br>
+        </div>
       
         <form>
           <div class="row">
-            <div class="medium-2 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
+            <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
               First Name
             </div>
-            <div class="medium-9 medium-offset-1 columns">
+            <div class="medium-8 medium-offset-1 columns">
               <input type="text" placeholder="" />
             </div>
-            <div class="medium-2 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
+            <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
               Last Name
             </div>
-            <div class="medium-9 medium-offset-1 columns">
+            <div class="medium-8 medium-offset-1 columns">
               <input type="text" placeholder="" />
             </div>
-            <div class="medium-2 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
+            <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">
               Email
             </div>
-            <div class="medium-9 medium-offset-1 columns">
+            <div class="medium-8 medium-offset-1 columns">
               <input type="text" placeholder="" />
-            </div>  
-          </div>
-          <div class="row">
-            <div class="large-8 medium-8 columns">
-              <label style="color: #000;">Roles</label>
-              <input class="large-3 large-offset-3"id="checkbox1" type="checkbox"><label for="checkbox1">Admin</label><br>
-              <input class="large-3 large-offset-3"class="large-3 large-offset-3"class="large-3 large-offset-3"id="checkbox2" type="checkbox"><label for="checkbox2">Tenacy Admin</label><br>
-              <input class="large-3 large-offset-3"class="large-3 large-offset-3"id="checkbox3" type="checkbox"><label for="checkbox3">IT</label><br>
-              <input class="large-3 large-offset-3"id="checkbox4" type="checkbox"><label for="checkbox4">Normal User</label><br>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-8 medium-8 columns">
-              <label style="color: #000;">Status</label>
-              <input class="large-3 large-offset-3"id="checkbox1" type="checkbox"><label for="checkbox1">Verified</label><br>
-              <input class="large-3 large-offset-3"class="large-3 large-offset-3"class="large-3 large-offset-3"id="checkbox2" type="checkbox"><label for="checkbox2">Blocked</label><br>
-              <input class="large-3 large-offset-3"class="large-3 large-offset-3"id="checkbox3" type="checkbox"><label for="checkbox3">Password-expired-grace</label><br>
-              <input class="large-3 large-offset-3"id="checkbox4" type="checkbox"><label for="checkbox4">Active</label><br>
-              <input class="large-3 large-offset-3"class="large-3 large-offset-3"id="checkbox5" type="checkbox"><label for="checkbox5">Inactive</label><br>
-              <input class="large-3 large-offset-3"id="checkbox6" type="checkbox"><label for="checkbox6">Terminated</label><br>
+            <div>  
+              <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">Roles</div>
+                <input class="large-1 large-offset-1"id="admin-checkbox" type="checkbox"><label for="checkbox1">Admin</label><br>
+                <input class="large-1 large-offset-4"class="large-3 large-offset-3"class="large-3 large-offset-3"id="tenacy-admin-checkbox" type="checkbox"><label for="checkbox2">Tenacy Admin</label><br>
+                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="it-checkbox" type="checkbox"><label for="checkbox3">IT</label><br>
+                <input class="large-1 large-offset-4"id="normal-user-checkbox" type="checkbox"><label for="checkbox4">Normal User</label><br>
+            </div><br>
+
+            <div>
+              <div class="medium-2 medium-offset-1 columns" style="border: 1px solid black; padding: 5px; text-align: center;">Status</div>
+                <input class="large-1 large-offset-1"id="verified-checkbox" type="checkbox"><label for="checkbox1">Verified</label><br>
+                <input class="large-1 large-offset-4"class="large-3 large-offset-3"class="large-3 large-offset-3"id="blocked-checkbox" type="checkbox"><label for="checkbox2">Blocked</label><br>
+                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="password-expired-checkbox" type="checkbox"><label for="checkbox3">Password-expired-grace</label><br>
+                <input class="large-1 large-offset-4"id="active-checkbox" type="checkbox"><label for="checkbox4">Active</label><br>
+                <input class="large-1 large-offset-4"class="large-3 large-offset-3"id="inactive-checkbox" type="checkbox"><label for="checkbox5">Inactive</label><br>
+                <input class="large-1 large-offset-4"id="terminated-checkbox" type="checkbox"><label for="checkbox6">Terminated</label><br>
+              </div>
             </div>
-          </div>
         </form>
-      </div>
+      
+    
       
       <div class="row">
-        <div class="medium-3 medium-offset-11">
-          <a href="#" class="button small">Save</a>
-          <a href="#" class="button small">Cancel</a>
+        <div class="medium-3 medium-offset-9">
+          <a href="#" class="button tiny">Save</a>
+          <a href="#" class="button tiny">Cancel</a>
         </div>
       </div>
+      </div>
+</div>
       </div>
       <div class="content" id="panel21">
         <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
@@ -89,9 +90,7 @@
       <div class="content" id="panel31">
         <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
       </div>
-      <div class="content" id="panel41">
-        <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-      </div>
+    </div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
