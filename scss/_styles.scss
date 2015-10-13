@@ -232,7 +232,7 @@
     .form-label {
       @include grid-column(
         // Control the number of columns
-        $columns:4
+        $columns:2
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -278,7 +278,7 @@
     .user-input {
       @include grid-column(
         // Control the number of columns
-        $columns:8
+        $columns:10
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -347,13 +347,13 @@
     .checkbox-item1 {
       @include grid-column(
         // Control the number of columns
-        $columns:1,
+        $columns:1
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:1
+        // $offset:1
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -370,13 +370,13 @@
     .checkbox-item1 {
       @include grid-column(
         // Control the number of columns
-        $columns:1,
+        $columns:1
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:1
+        // $offset:1
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -416,13 +416,13 @@
     .checkbox-item {
       @include grid-column(
         // Control the number of columns
-        $columns:1,
+        $columns:1
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:4
+        // $offset:2
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -702,3 +702,11 @@ ul li {
     z-index: 0;
 }
 
+input[type="checkbox"] {
+    margin: 0;
+    display: block;
+}
+input[type="checkbox"]+label {
+    margin: 0;
+    display: block;
+}
