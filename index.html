@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City Zenith</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -86,17 +87,14 @@
           </div>
         </div>
         <div class="content" id="panel21" role="tabpanel" aria-hidden="true">
-          <div class="wrapper medium-9 medium-offset-3">
+          <div class="wrapper">
               <form class="search-form">
-                <div class="row collapse search-row">
+                <div class="row search-row">
                   <div class="large-3 columns">
                     <input type="text" class="search-box" placeholder="search" />
                   </div>
                   <div class="search-button large-1 columns">
-                    <span class="postfix"><i class="fi-magnifying-glass"></i></span></input>
-                  </div>
-                  <div class="large-3 columns search-text">
-                    <p>Simple Search</p>
+                    <a class=""><i class="fa fa-search fa-2x"></i></a>
                   </div>
                   <div class="large-2 columns search-btn">
                     <a href="#" class="button tiny">Clear Search</a>
@@ -142,39 +140,41 @@
               </form>
 
               <div class="row">
-                <table id="users" class="user-form">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Actions</th>
-                    </tr>
-                    <tr>
-                      <td>Admin</td>
-                      <td>Will manage all controls</td>
-                      <td><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Tenant - Admin</td>
-                      <td>Will take are of tenant environments</td>
-                      <td><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>IT</td>
-                      <td>Will handle infrasturcutre</td>
-                      <td><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>Normal User</td>
-                      <td></td>
-                      <td><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-trash"></i></a></td>
-                    </tr>
-                  </thead>
-                </table>
+                <div class="large-10 columns">
+                  <table id="users" class="user-form">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                      </tr>
+                      <tr>
+                        <td>Admin</td>
+                        <td>Will manage all controls</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Tenant - Admin</td>
+                        <td>Will take are of tenant environments</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>IT</td>
+                        <td>Will handle infrasturcutre</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Normal User</td>
+                        <td></td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
               </div>
           </div>
         </div><!--end panel21-->
@@ -206,6 +206,7 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation();
     </script>
