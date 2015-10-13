@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="css/foundation.css" /> -->
     <!-- <link rel="stylesheet" href="css/tabs.css" /> -->
     <link rel="stylesheet" href="css/app.css" />
+
   </head>
   <body>
   <div class="main">
@@ -112,10 +113,100 @@
             </div>
           </div>
         </div>
-          <div class="content" id="panel21">
-            <div class="wrapper medium-9 medium-offset-3" style="border: 1px solid black;">
-            </div>
+
+        <div class="content" id="panel21" role="tabpanel" aria-hidden="true">
+          <div class="wrapper">
+              <form class="search-form">
+                <div class="row search-row">
+                  <div class="large-3 columns">
+                    <input type="text" class="search-box" placeholder="search" />
+                  </div>
+                  <div class="search-button large-1 columns">
+                    <a class=""><i class="fa fa-search fa-2x"></i></a>
+                  </div>
+                  <div class="large-2 columns search-btn">
+                    <a href="#" class="button tiny">Clear Search</a>
+                  </div>
+                  <div class="large-2 columns">
+                    <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown tiny">Admin</button>
+                    <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                      <li><a href="#">This is a link</a></li>
+                      <li><a href="#">This is another</a></li>
+                      <li><a href="#">Yet another</a></li>
+                    </ul>
+                  </div>
+                  </div>
+              </form>
+              
+              <form class="role-filters">
+                <div class="row">
+                  <div class="large-2 columns">
+                    <select>
+                      <option value="role-name">Role Name</option>
+                      <option value="role1">Role 1</option>
+                      <option value="role2">Role 2</option>
+                    </select>
+                  </div>
+                  <div class="large-2 columns">
+                    <select>
+                      <option value="contains">Contains</option>
+                      <option value="role1">Role 1</option>
+                      <option value="role2">Role 2</option>
+                    </select>
+                  </div>
+                  <div class="large-2 columns">
+                    <select>
+                      <option value="add-new">Add new</option>
+                      <option value="role1">Role 1</option>
+                      <option value="role2">Role 2</option>
+                    </select>
+                  </div>
+                  <div class="large-2 columns">
+                      <a href="#" class="button tiny">Create new role</a>
+                  </div>
+                </div><!--end row-->
+              </form>
+
+              <div class="row">
+                <div class="large-10 columns">
+                  <table id="users" class="user-form">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                      </tr>
+                      <tr>
+                        <td>Admin</td>
+                        <td>Will manage all controls</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Tenant - Admin</td>
+                        <td>Will take are of tenant environments</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>IT</td>
+                        <td>Will handle infrasturcutre</td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Normal User</td>
+                        <td></td>
+                        <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+
           </div>
+        </div><!--end panel21-->
           <div class="content" id="panel31">
           </div>
         </div>
@@ -141,6 +232,8 @@
     
     </div>
   </div>
+
     <script src="js/app.js"></script>
+
   </body>
 </html>
