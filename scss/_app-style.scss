@@ -1,0 +1,59 @@
+body {
+    background: #e6f4f5;
+}
+
+.main {
+    margin: 0 auto;
+    
+}
+
+.wrapper{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.container {
+    padding: 0;
+    background: #949393;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
+}
+
+.right-column {
+    padding-right:3px;
+}
+
+.tabs-content {
+    background: #fff;
+    border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 3px;
+}
+
+ul.tabs, .tab-title , ul.tabs .active{
+    border: none;
+}
+
+.tabs-content .row{
+    margin: 0;
+}
+
+.users-column {
+    margin: 0 !important;
+}
+
+.form-container {
+    padding: 0;
+}
+
+.checkbox-label {
+    margin: 0 !important;
+}
+.checkbox-item {
+    margin: 0 !important;
+}
