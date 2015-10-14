@@ -145,6 +145,7 @@ ul.tabs, .tab-title , ul.tabs .active{
 
 input[type="checkbox"] {
     margin: 0;
+    margin-top: 3px;
     display: block;
 }
 input[type="checkbox"]+label {
@@ -172,6 +173,6 @@ input[type="checkbox"]+label {
 
 @media only screen and (max-width: 64em) {
     .checkbox-item {
-        //margin-top: 20px;
+        margin-top: 20px;
     }
 }
