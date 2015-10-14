@@ -1,51 +1,29 @@
-// media #{$small-only} { 
-//     .form-right-column{
-//       @include grid-column(
-//         // Control the number of columns
-//         $columns:3,
-//         // Specify whether or not this is the last column in the row
-//         // $last-column:false,
-//         // Choose whether or not to center this column
-//         // $center:true
-//         // Choose the number of columns to offset this element by
-//         $offset:1
-//         // Specify how many columns to push this element past
-//         // $push:3,
-//         // Specify how many columns to pull this element past
-//         // $pull:9,
-//         // Set to true to remove column padding
-//         // $collapse:true,
-//         // Specify the float direction
-//         // $float:right
-//       );
-//     }
-// }
+$default-color: gray;
+$font-color: darken($default-color, 60%);
+$alt-font-color: #10698e;
+$light-color: lighten($default-color, 20%);
+$dark-color: darken($default-color, 20%);
+$bg-color : #e6f4f5;
+$button-color: #005b7f;
+$information-color: blue;
+$black-color: lighten(black, 5%);
+$white-color: darken(white, 5%);
 
-// @media #{$medium-up} { 
-//     .form-right-column {
-//       @include grid-column(
-//         // Control the number of columns
-//         $columns:2,
-//         // Specify whether or not this is the last column in the row
-//         // $last-column:false,
-//         // Choose whether or not to center this column
-//         // $center:true
-//         // Choose the number of columns to offset this element by
-//         $offset:1
-//         // Specify how many columns to push this element past
-//         // $push:3,
-//         // Specify how many columns to pull this element past
-//         // $pull:9,
-//         // Set to true to remove column padding
-//         // $collapse:true,
-//         // Specify the float direction
-//         // $float:right
-//       );
-//     }
-// }
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
+      -webkit-box-shadow:$top $left $blur $spread $color #{$inset};
+      -moz-box-shadow:$top $left $blur $spread $color #{$inset};
+      box-shadow:$top $left $blur $spread $color #{$inset};
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+>>>>>>> feature-user-style
 
 body {
-    background: #e6f4f5;
+    background: $bg-color;
 }
 
 .main {
@@ -58,14 +36,25 @@ body {
     padding-right: 3.5%;
 }
 
+.admin-button{
+    ul{
+        li{
+            border: none;
+        }
+    }
+}
+
+.default-button {
+    background-color: $button-color;
+    @include rounded();
+}
+
 .container {
     padding: 0;
     background: #949393;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.2);
+    @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
 }
 
 .right-column {
