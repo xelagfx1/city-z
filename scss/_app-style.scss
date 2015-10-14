@@ -33,6 +33,19 @@ body {
         -moz-border-radius: 8px;
         border-radius: 8px;
         @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
+        .left-column {
+            ul {
+                li {
+                    margin: 3px 0 ;
+                }
+            }
+            .tabs {
+                .tab-title.active>a{
+                            color: $alt-font-color;
+                }
+            }
+            
+        }
         .right-column{
             padding-right:3px;
             .tabs-content {
@@ -72,8 +85,11 @@ body {
 }
 
 .default-button {
-    background-color: $button-color;
+    @include button(
+      $padding: $button-tny
+    );
     @include rounded();
+    background-color: $button-color;
 }
 
 table i {
@@ -90,6 +106,9 @@ table i {
             padding: .9875rem;
             font-size: .75rem;
             font-weight: normal;
+        }
+        .description {
+            width: 75%;
         }
     }
 }
@@ -111,5 +130,48 @@ ul.tabs, .tab-title , ul.tabs .active{
 }
 
 .checkbox-label {
-    margin: 0 !important;
+    //margin: 0 !important;
+}
+
+.tabs.vertical {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.tab-align {
+    margin-right: -30px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    display: block;
+}
+input[type="checkbox"]+label {
+    margin: 0;
+    display: block;
+}
+
+@media only screen and (max-width: 40em) {
+    ul li {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    ul .active {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .ul-wrapper {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 64em) {
+    .checkbox-item {
+        //margin-top: 20px;
+    }
 }
