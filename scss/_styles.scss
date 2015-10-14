@@ -209,13 +209,13 @@
     .form-label {
       @include grid-column(
         // Control the number of columns
-        // $columns:3,
+        $columns:5
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:1
+        // $offset:1
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -251,15 +251,38 @@
     }
 }
 
+@media #{$medium-only} { 
+    .form-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
 @media #{$small-only} { 
     .user-input {
       @include grid-column(
         // Control the number of columns
-        $columns:11,
+        $columns:12
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
-        $center:true
+        // $center:true
         // Choose the number of columns to offset this element by
         // $offset:2
         // Specify how many columns to push this element past
@@ -267,7 +290,7 @@
         // Specify how many columns to pull this element past
         // $pull:9,
         // Set to true to remove column padding
-        // $collapse:true,
+        // $collapse:true
         // Specify the float direction
         // $float:right
       );
@@ -301,13 +324,13 @@
     .checkbox-label {
       @include grid-column(
         // Control the number of columns
-        $columns:3,
+        $columns:2
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:1
+        // $offset:1
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -347,7 +370,7 @@
     .checkbox-item1 {
       @include grid-column(
         // Control the number of columns
-        $columns:1
+        $columns:12
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -393,13 +416,13 @@
     .checkbox-item {
       @include grid-column(
         // Control the number of columns
-        $columns:1,
+        $columns:1
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:5
+        // $offset:1
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -439,13 +462,13 @@
     .save-cancel {
       @include grid-column(
         // Control the number of columns
-        $columns:5,
+        $columns:6,
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:7
+        $offset:6
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -699,6 +722,12 @@ ul li {
 @media only screen and (max-width: 40em) {
     .ul-wrapper {
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 64em) {
+    .checkbox-item {
+        margin-top: 20px;
     }
 }
 
