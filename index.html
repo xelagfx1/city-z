@@ -37,24 +37,27 @@
                                     </div>
                                     <hr>
                                     <div class="row">
-                                        <form class="form-container">
+                                        <form data-abide class="form-container">
                                             <div class="form-label">First Name</div>
                                             <div class="user-input">
-                                                <input type="text" class="error" placeholder="" />
+                                                <input type="text" class="error" placeholder="" required pattern="[a-zA-Z]+" />
+                                                <small class="error">Please enter a first name.</small>
                                             </div>
-                                            <small class="error">Invalid entry</small>
+                                            
                                             <hr>
                                             <div class="form-label">Last Name</div>
                                             <div class="user-input">
-                                                <input type="text" class="error" placeholder="" />
+                                                <input type="text" class="error" placeholder="" required pattern="[a-zA-Z]+"/>
+                                                <small class="error">Please enter a last name.</small>
                                             </div>
-                                            <small class="error">Invalid entry</small>
+                                            
                                             <hr>
                                             <div class="form-label">Email</div>
                                             <div class="user-input">
-                                                <input type="text" class="error" placeholder="" />
+                                                <input type="text" class="error" placeholder="" required />
+                                                <small class="error">An email address is required.</small>
                                             </div>
-                                            <small class="error">Invalid entry</small>
+                                            
                                             <hr>
                                             <div class="form-label">Roles</div>
                                                 <div class="checkboxes">
@@ -75,14 +78,15 @@
                                                     <input class="checkbox-item"id="inactive-checkbox" type="checkbox"><label for="inactive-checkbox">Inactive</label>
                                                     <input class="checkbox-item"id="terminated-checkbox" type="checkbox"><label for="terminated-checkbox">Terminated</label>
                                                 </div>
-                                        </form>
+                                        
                                     </div> <!-- end row -->
                                       <div class="row">
                                         <div class="save-cancel">
-                                          <a href="#" class="default-button">Save</a>
-                                          <a href="#" class="default-button">Cancel</a>
+                                          <button class="default-button" type="submit">Save</button>
+                                          <button class="default-button">Cancel</button>
                                         </div>
                                     </div> 
+                                    </form>
                                 </div> <!-- end wrapper -->
                             </div> <!-- end active content -->
                             <div class="content" id="panel21" role="tabpanel" aria-hidden="true">
@@ -188,5 +192,8 @@
             </div> <!-- end container -->
         </div> <!-- end main -->
     <script src="js/app.js"></script>
+    <script>
+
+    </script>
     </body>
 </html>
