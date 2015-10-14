@@ -20,7 +20,6 @@ $white-color: darken(white, 5%);
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
->>>>>>> feature-user-style
 
 body {
     background: $bg-color;
@@ -28,20 +27,37 @@ body {
 
 .main {
     margin: 0 auto;
-    
-}
-
-.wrapper{
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-}
-
-.admin-button{
-    ul{
-        li{
-            border: none;
+    .container {
+        padding: 0;
+        background: #949393;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
+        .right-column{
+            padding-right:3px;
+            .tabs-content {
+                background: #fff;
+                border: none;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border-top-right-radius: 8px;
+                margin-bottom: 3px;
+                .content {
+                    .wrapper{
+                        padding-left: 3.5%;
+                        padding-right: 3.5%;
+                        .admin-button{
+                            ul{
+                                li{
+                                    border: none;
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
         }
-    }
+    } 
 }
 
 .default-button {
@@ -49,25 +65,17 @@ body {
     @include rounded();
 }
 
-.container {
-    padding: 0;
-    background: #949393;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
-}
-
-.right-column {
-    padding-right:3px;
-}
-
-.tabs-content {
-    background: #fff;
-    border: none;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 3px;
+.roles-table {
+    table {
+        th{
+            padding: .9875rem;
+        }
+        td{
+            padding: .9875rem;
+            font-size: .75rem;
+            font-weight: normal;
+        }
+    }
 }
 
 ul.tabs, .tab-title , ul.tabs .active{
