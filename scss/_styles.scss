@@ -642,9 +642,18 @@
     }
 }
 
-.save-button { 
+.default-button { 
     @include button(
         $padding: $button-tny
+    );
+}
+
+.admin { 
+    @include button(
+        $padding: $button-tny
+    );
+
+    @include dropdown-button(
     );
 }
 
