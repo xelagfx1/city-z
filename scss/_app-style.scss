@@ -1,5 +1,5 @@
 $default-color: gray;
-$font-color: darken($default-color, 60%);
+$font-color: darken($default-color, 20%);
 $alt-font-color: #10698e;
 $light-color: lighten($default-color, 20%);
 $dark-color: darken($default-color, 20%);
@@ -8,6 +8,7 @@ $button-color: #005b7f;
 $information-color: blue;
 $black-color: lighten(black, 5%);
 $white-color: darken(white, 5%);
+$font-size-medium: .9rem;
 
 @mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
       -webkit-box-shadow:$top $left $blur $spread $color #{$inset};
@@ -23,13 +24,16 @@ $white-color: darken(white, 5%);
 
 body {
     background: $bg-color;
+    color: $font-color;
 }
 
 .main {
     margin: 0 auto;
+
     .container {
         padding: 0;
-        background: #949393;
+        margin-top: 30px;
+        background: #dddddd;
         -moz-border-radius: 8px;
         border-radius: 8px;
         @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
@@ -40,6 +44,9 @@ body {
                 }
             }
             .tabs {
+                .tab-title>a{
+                    color: $light-color;
+                }
                 .tab-title.active>a{
                             color: $alt-font-color;
                 }
@@ -54,7 +61,11 @@ body {
                 border-bottom-right-radius: 8px;
                 border-bottom-left-radius: 8px;
                 border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
                 margin-bottom: 3px;
+                margin-top: 3px;
+                padding-bottom: 20px;
+                padding-top: 20px;
                 .content {
                     .wrapper{
                         padding-left: 3.5%;
@@ -63,6 +74,18 @@ body {
                             ul{
                                 li{
                                     border: none;
+                                }
+                            }
+                        }
+                        .form-container{
+                            .form-label{
+                                font-size: $font-size-medium;
+                                margin-top: 5px;
+
+                            }
+                            .checkboxes{
+                                label{
+                                    font-size: .8rem;
                                 }
                             }
                         }

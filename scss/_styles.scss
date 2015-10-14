@@ -94,13 +94,13 @@
     .admin {
       @include grid-column(
         // Control the number of columns
-        $columns:3,
+        //$columns:3,
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:8
+        //$offset:8
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -108,7 +108,7 @@
         // Set to true to remove column padding
         // $collapse:true,
         // Specify the float direction
-        // $float:right
+        $float:right
       );
     }
 }
@@ -117,13 +117,13 @@
     .admin {
       @include grid-column(
         // Control the number of columns
-        $columns:3,
+        //$columns:3,
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:9
+        //$offset:9
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -131,7 +131,7 @@
         // Set to true to remove column padding
         // $collapse:true,
         // Specify the float direction
-        // $float:right
+         $float:right
       );
     }
 }
@@ -156,6 +156,7 @@
         // Specify the float direction
         // $float:right
       );
+      padding: 0;
     }
 }
 
@@ -179,6 +180,7 @@
         // Specify the float direction
         // $float:right
       );
+      padding: 0;
     }
 }
 
@@ -226,6 +228,7 @@
         // $float:right
       );
       margin-bottom: 5px;
+      padding: 0;
     }
 }
 
@@ -301,8 +304,104 @@
     }
 }
 
+@media #{$small-up} { 
+    .user-input {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
 @media #{$large-up} { 
     .user-input {
+      @include grid-column(
+        // Control the number of columns
+        $columns:10
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+@media #{$small-only} { 
+    .checkboxes {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-bottom: 15px;
+    }
+}
+
+@media #{$medium-up} { 
+    .checkboxes {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-bottom: 15px;
+    }
+}
+
+@media #{$large-up} { 
+    .checkboxes {
       @include grid-column(
         // Control the number of columns
         $columns:10
@@ -466,13 +565,13 @@
     .save-cancel {
       @include grid-column(
         // Control the number of columns
-        $columns:6,
+        //$columns:6,
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:6
+        //$offset:6
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -480,7 +579,7 @@
         // Set to true to remove column padding
         // $collapse:true,
         // Specify the float direction
-        // $float:right
+         $float:right
       );
     }
 }
@@ -489,13 +588,13 @@
     .save-cancel {
       @include grid-column(
         // Control the number of columns
-        $columns:4,
+        //$columns:3,
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:8
+        //$offset:9
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -503,7 +602,7 @@
         // Set to true to remove column padding
         // $collapse:true,
         // Specify the float direction
-        // $float:right
+         $float:right
       );
     }
 }

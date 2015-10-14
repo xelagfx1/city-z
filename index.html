@@ -40,21 +40,24 @@
                                         <form class="form-container">
                                             <div class="form-label">First Name</div>
                                             <div class="user-input">
-                                                <input type="text" placeholder="" />
+                                                <input type="text" class="error" placeholder="" />
                                             </div>
+                                            <small class="error">Invalid entry</small>
                                             <hr>
                                             <div class="form-label">Last Name</div>
                                             <div class="user-input">
-                                                <input type="text" placeholder="" />
+                                                <input type="text" class="error" placeholder="" />
                                             </div>
+                                            <small class="error">Invalid entry</small>
                                             <hr>
                                             <div class="form-label">Email</div>
                                             <div class="user-input">
-                                                <input type="text" placeholder="" />
+                                                <input type="text" class="error" placeholder="" />
                                             </div>
+                                            <small class="error">Invalid entry</small>
                                             <hr>
                                             <div class="form-label">Roles</div>
-                                                <div class="user-input">
+                                                <div class="checkboxes">
                                                     <input class="checkbox-item" id="admin-checkbox" type="checkbox">
                                                     <label for="admin-checkbox">Admin</label>
                                                     <input class="checkbox-item" id="tenacy-admin-checkbox" type="checkbox">
@@ -64,7 +67,7 @@
                                                 </div>
                                             <hr>    
                                             <div class="form-label">Status</div>
-                                                <div class="user-input"> 
+                                                <div class="checkboxes"> 
                                                     <input class="checkbox-item"id="verified-checkbox" type="checkbox"><label for="verified-checkbox">Verified</label>
                                                     <input class="checkbox-item"id="blocked-checkbox" type="checkbox"><label for="blocked-checkbox">Blocked</label>
                                                     <input class="checkbox-item" id="password-expired-checkbox" type="checkbox"><label for="password-expired-checkbox">Password-expired-grace</label>
