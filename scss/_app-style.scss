@@ -46,6 +46,8 @@ body {
             .tabs {
                 .tab-title>a{
                     color: $light-color;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
                 }
                 .tab-title.active>a{
                             color: $alt-font-color;
@@ -103,7 +105,7 @@ body {
 
     @include dropdown-button(
     );
-
+    @include rounded();
     background-color: $button-color;
 }
 
