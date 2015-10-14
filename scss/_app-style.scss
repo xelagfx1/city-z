@@ -1,0 +1,203 @@
+$default-color: gray;
+$font-color: darken($default-color, 20%);
+$alt-font-color: #10698e;
+$light-color: lighten($default-color, 20%);
+$dark-color: darken($default-color, 20%);
+$bg-color : #e6f4f5;
+$button-color: #005b7f;
+$information-color: blue;
+$black-color: lighten(black, 5%);
+$white-color: darken(white, 5%);
+$font-size-medium: .9rem;
+
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
+      -webkit-box-shadow:$top $left $blur $spread $color #{$inset};
+      -moz-box-shadow:$top $left $blur $spread $color #{$inset};
+      box-shadow:$top $left $blur $spread $color #{$inset};
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+    background: $bg-color;
+    color: $font-color;
+}
+
+.main {
+    margin: 0 auto;
+
+    .container {
+        padding: 0;
+        margin-top: 30px;
+        background: #dddddd;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        @include box-shadow(5px, 5px, 9px, 0px, rgba(0, 0, 0, 0.2));
+        .left-column {
+            ul {
+                li {
+                    margin: 3px 0 ;
+                }
+            }
+            .tabs {
+                .tab-title>a{
+                    color: $light-color;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+                .tab-title.active>a{
+                            color: $alt-font-color;
+                }
+            }
+            
+        }
+        .right-column{
+            padding-right:3px;
+            .tabs-content {
+                background: #fff;
+                border: none;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                margin-bottom: 3px;
+                margin-top: 3px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                .content {
+                    .wrapper{
+                        padding-left: 3.5%;
+                        padding-right: 3.5%;
+                        .admin{
+                            ul{
+                                li{
+                                    border: none;
+                                }
+                            }
+                        }
+                        .form-container{
+                            .form-label{
+                                font-size: $font-size-medium;
+                                margin-top: 5px;
+
+                            }
+                            .checkboxes{
+                                label{
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+    } 
+}
+
+.admin-button { 
+    @include button(
+        $padding: $button-tny
+    );
+
+    @include dropdown-button(
+    );
+    @include rounded();
+    background-color: $button-color;
+}
+
+.default-button {
+    @include button(
+      $padding: $button-tny
+    );
+    @include rounded();
+    background-color: $button-color;
+}
+
+table i {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.roles-table {
+    table {
+        th{
+            padding: .9875rem;
+        }
+        td{
+            padding: .9875rem;
+            font-size: .75rem;
+            font-weight: normal;
+        }
+        .description {
+            width: 75%;
+        }
+    }
+}
+
+ul.tabs, .tab-title , ul.tabs .active{
+    border: none;
+}
+
+.tabs-content .row{
+    margin: 0;
+}
+
+.users-column {
+    margin: 0 !important;
+}
+
+.form-container {
+    padding: 0;
+}
+
+.checkbox-label {
+    //margin: 0 !important;
+}
+
+.tabs.vertical {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.tab-align {
+    margin-right: -30px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    margin-top: 3px;
+    display: block;
+}
+input[type="checkbox"]+label {
+    margin: 0;
+    display: block;
+}
+
+@media only screen and (max-width: 40em) {
+    ul li {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    ul .active {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .ul-wrapper {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 64em) {
+    .checkbox-item {
+        margin-top: 20px;
+    }
+}

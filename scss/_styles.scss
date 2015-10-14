@@ -1,0 +1,937 @@
+.main {
+      @include grid-row(
+        // Control the number of columns
+        // $columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:3,
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        $behavior: collapse
+        // Specify the float direction
+        // $float:right
+      );
+    }
+
+@media #{$medium-up} { 
+    .container {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:3,
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $:false
+        // Specify the float direction
+        // $float:right
+      );
+    }
+} 
+
+@media #{$medium-up} { 
+    .right-column {
+      @include grid-column(
+        // Control the number of columns
+        $columns:9,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:3,
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      float: right;
+    }
+}
+
+@media #{$medium-up} { 
+    .left-column {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:3,
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      float: left;
+    }
+}
+
+@media #{$small-only} { 
+    .admin {
+      @include grid-column(
+        // Control the number of columns
+        //$columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        //$offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .admin {
+      @include grid-column(
+        // Control the number of columns
+        //$columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        //$offset:9
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+         $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .users-column {
+      @include grid-column(
+        // Control the number of columns
+        // $columns:6,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+@media #{$medium-up} { 
+    .users-column {
+      @include grid-column(
+        // Control the number of columns
+        $columns:6,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+@media #{$medium-up} { 
+    .form-container {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .form-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:5
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      margin-bottom: 5px;
+      padding: 0;
+    }
+}
+
+@media #{$medium-up} { 
+    .form-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:2
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      margin-bottom: 5px;
+    }
+}
+
+@media #{$medium-only} { 
+    .form-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+@media #{$small-only} { 
+    .user-input {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-up} { 
+    .user-input {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-bottom: 15px;
+    }
+}
+
+@media #{$large-up} { 
+    .user-input {
+      @include grid-column(
+        // Control the number of columns
+        $columns:10
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+@media #{$small-only} { 
+    .checkboxes {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-bottom: 15px;
+    }
+}
+
+@media #{$medium-up} { 
+    .checkboxes {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-bottom: 15px;
+    }
+}
+
+@media #{$large-up} { 
+    .checkboxes {
+      @include grid-column(
+        // Control the number of columns
+        $columns:10
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .checkbox-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:2
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .checkbox-label {
+      @include grid-column(
+        // Control the number of columns
+        $columns:2,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .checkbox-item1 {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .checkbox-item1 {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .checkbox-item {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:1
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .checkbox-item {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:2
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .save-cancel {
+      @include grid-column(
+        // Control the number of columns
+        //$columns:6,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        //$offset:6
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+         $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .save-cancel {
+      @include grid-column(
+        // Control the number of columns
+        //$columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        //$offset:9
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+         $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .search-box {
+      @include grid-column(
+        // Control the number of columns
+        $columns:11
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+
+
+@media #{$medium-up} { 
+    .search-box {
+      @include grid-column(
+        // Control the number of columns
+        $columns:5
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-only} { 
+    .search-box {
+      @include grid-column(
+        // Control the number of columns
+        $columns:5
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+@media #{$small-only} { 
+    .search-glass {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .search-glass {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$large-up} { 
+    .search-glass {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$small-only} { 
+    .search-button {
+      @include grid-column(
+        // Control the number of columns
+        $columns:4
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .search-button {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$large-up} { 
+    .roles-admin {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        $offset:9
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .roles-dropdown {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-only} { 
+    .roles-dropdown {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-right: 10px;
+    }
+}
+
+@media #{$large-up} { 
+    .roles-dropdown {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$large-up} { 
+    .new-role {
+      @include grid-column(
+        // Control the number of columns
+        $columns:2,
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$large-up} { 
+    .roles-table {
+      @include grid-column(
+        // Control the number of columns
+        $columns:12
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
