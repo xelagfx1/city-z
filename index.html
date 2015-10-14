@@ -11,12 +11,21 @@
         <div class="main">
             <div class="container">
                 <div class="row">
+                    <div class="left-column">
+                    <div class="ul-wrapper">
+                        <ul class="tabs vertical" style="margin-top: 5%;" data-tab>
+                            <li class="tab-title active"><a href="#panel11">Users</a></li>
+                            <li class="tab-title"><a href="#panel21">Roles</a></li>
+                             <li class="tab-title"><a href="#panel31">Permission Matrix</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- end left-column -->
                     <div class="right-column">
                         <div class="tabs-content">
                             <div class="content active" id="panel11">
                                 <div class="wrapper">
-                                    <div class="admin-button">
-                                        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="admin">Admin</button>
+                                    <div class="admin">
+                                        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="admin-button">Admin</button>
                                         <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
                                             <li><a href="#">This is a link</a></li>
                                             <li><a href="#">This is another</a></li>
@@ -76,34 +85,39 @@
                             <div class="content" id="panel21" role="tabpanel" aria-hidden="true">
                                 <div class="wrapper">
                                 <div class="form-container">
-                                    <div class="row search-row">
-                                        <form class="search-form">
-                                            <div class="search-input">
-                                              <input type="text" class="search-box" placeholder="search" />
-                                            </div>
-                                            <div class="search-button search-glass">
-                                              <a class=""><i class="fa fa-search fa-2x"></i></a>
-                                            </div>
-                                            <div class="search-button search-btn">
-                                              <a href="#" class="button tiny">Clear Search</a>
-                                            </div>
-                                            <div class="roles-admin">
-                                              <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="admin">Admin</button>
+                                    <div class="row">
+                                            <div class="admin">
+                                              <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="admin-button">Admin</button>
                                               <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
                                                 <li><a href="#">This is a link</a></li>
                                                 <li><a href="#">This is another</a></li>
                                                 <li><a href="#">Yet another</a></li>
                                               </ul>
                                             </div>
-                                        </form>
                                     </div> <!-- end search-row -->
+                                    <form class="search-form">
+                                        <div class="row">
+                                            <div class="search-box">
+                                                <input type="text" placeholder="Search" />
+                                            </div>
+                                            <div class="search-glass">
+                                                <a class=""><i class="fa fa-search fa-2x"></i></a>
+                                            </div>
+                                            <!-- <div class="search-button">
+                                                <a href="#" class="default-button">Clear Search</a>
+                                            </div> -->
+                                        </div>
+                                    </form>
                                     <form class="role-filters">
                                         <div class="row">
                                             <div class="roles-dropdown">
                                                 <select>
                                                     <option value="role-name">Role Name</option>
-                                                    <option value="role1">Role 1</option>
-                                                    <option value="role2">Role 2</option>
+                                                    <option value="role1">Admin</option>
+                                                    <option value="role2">Tenant-Admin</option>
+                                                    <option value="role3">IT</option>
+                                                    <option value="role4">Normal User</option>
+                                                    <option value="role5">Add New</option>
                                                 </select>
                                             </div>
                                             <div class="roles-dropdown">
@@ -113,16 +127,6 @@
                                                     <option value="role2">Role 2</option>
                                                 </select>
                                             </div>
-                                            <div class="roles-dropdown">
-                                                <select>
-                                                    <option value="add-new">Add new</option>
-                                                    <option value="role1">Role 1</option>
-                                                    <option value="role2">Role 2</option>
-                                                </select>
-                                            </div>
-                                            <div class="new-role">
-                                                <a href="#" class="button tiny">Create new role</a>
-                                            </div>
                                         </div><!--end row-->
                                     </form>
                                     <div class="row">
@@ -131,7 +135,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Name</th>
-                                                        <th>Description</th>
+                                                        <th class="description">Description</th>
                                                         <th>Actions</th>
                                                     </tr>
                                                     <tr>
@@ -144,14 +148,22 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Tenant - Admin</td>
-                                                        <td>Will take are of tenant environments</td>
+                                                        <td>Tenant-Admin</td>
+                                                        <td>Will take are of tenant environments.</td>
                                                         <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td></td>
+                                                        <td></td>
                                                     </tr>
                                                     <tr>
                                                         <td>IT</td>
                                                         <td>Will handle infrasturcutre</td>
                                                         <td><a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a></td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td></td>
+                                                        <td></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Normal User</td>
@@ -169,15 +181,6 @@
                             </div>
                         </div> <!-- end tabs-content  -->
                     </div> <!-- end right-column -->
-                <div class="left-column">
-                    <div class="ul-wrapper">
-                        <ul class="tabs vertical" style="margin-top: 5%;" data-tab>
-                            <li class="tab-title active"><a href="#panel11">Users</a></li>
-                            <li class="tab-title"><a href="#panel21">Roles</a></li>
-                             <li class="tab-title"><a href="#panel31">Permission Matrix</a></li>
-                        </ul>
-                    </div>
-                </div> <!-- end left-column -->
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </div> <!-- end main -->

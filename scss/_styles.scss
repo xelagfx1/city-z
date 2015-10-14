@@ -91,7 +91,7 @@
 }
 
 @media #{$small-only} { 
-    .admin-button {
+    .admin {
       @include grid-column(
         // Control the number of columns
         $columns:3,
@@ -114,7 +114,7 @@
 }
 
 @media #{$medium-up} { 
-    .admin-button {
+    .admin {
       @include grid-column(
         // Control the number of columns
         $columns:3,
@@ -504,11 +504,107 @@
     }
 }
 
-@media #{$large-up} { 
-    .search-input {
+@media #{$small-only} { 
+    .search-box {
       @include grid-column(
         // Control the number of columns
-        $columns:3
+        $columns:11
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+
+
+@media #{$medium-up} { 
+    .search-box {
+      @include grid-column(
+        // Control the number of columns
+        $columns:5
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-only} { 
+    .search-box {
+      @include grid-column(
+        // Control the number of columns
+        $columns:5
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+    }
+}
+
+@media #{$small-only} { 
+    .search-glass {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .search-glass {
+      @include grid-column(
+        // Control the number of columns
+        $columns:1
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -550,11 +646,34 @@
     }
 }
 
-@media #{$large-up} { 
+@media #{$small-only} { 
     .search-button {
       @include grid-column(
         // Control the number of columns
-        $columns:2
+        $columns:4
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-up} { 
+    .search-button {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -583,7 +702,7 @@
         // Choose whether or not to center this column
         // $center:true
         // Choose the number of columns to offset this element by
-        $offset:3
+        $offset:9
         // Specify how many columns to push this element past
         // $push:3,
         // Specify how many columns to pull this element past
@@ -593,6 +712,54 @@
         // Specify the float direction
         // $float:right
       );
+    }
+}
+
+@media #{$medium-up} { 
+    .roles-dropdown {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+    }
+}
+
+@media #{$medium-only} { 
+    .roles-dropdown {
+      @include grid-column(
+        // Control the number of columns
+        $columns:3
+        // Specify whether or not this is the last column in the row
+        // $last-column:false,
+        // Choose whether or not to center this column
+        // $center:true
+        // Choose the number of columns to offset this element by
+        // $offset:8
+        // Specify how many columns to push this element past
+        // $push:3,
+        // Specify how many columns to pull this element past
+        // $pull:9,
+        // Set to true to remove column padding
+        // $collapse:true,
+        // Specify the float direction
+        // $float:right
+      );
+      padding: 0;
+      padding-right: 10px;
     }
 }
 
@@ -646,7 +813,7 @@
     .roles-table {
       @include grid-column(
         // Control the number of columns
-        $columns:10
+        $columns:12
         // Specify whether or not this is the last column in the row
         // $last-column:false,
         // Choose whether or not to center this column
@@ -668,15 +835,6 @@
 .default-button { 
     @include button(
         $padding: $button-tny
-    );
-}
-
-.admin { 
-    @include button(
-        $padding: $button-tny
-    );
-
-    @include dropdown-button(
     );
 }
 
@@ -747,4 +905,8 @@ input[type="checkbox"] {
 input[type="checkbox"]+label {
     margin: 0;
     display: block;
+}
+
+.description {
+     width: 400px;
 }

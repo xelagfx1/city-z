@@ -46,7 +46,7 @@ body {
                     .wrapper{
                         padding-left: 3.5%;
                         padding-right: 3.5%;
-                        .admin-button{
+                        .admin{
                             ul{
                                 li{
                                     border: none;
@@ -60,9 +60,25 @@ body {
     } 
 }
 
+.admin-button { 
+    @include button(
+        $padding: $button-tny
+    );
+
+    @include dropdown-button(
+    );
+
+    background-color: $button-color;
+}
+
 .default-button {
     background-color: $button-color;
     @include rounded();
+}
+
+table i {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .roles-table {
